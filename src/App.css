@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: hsl(180, 52%, 96%);
+  padding-bottom: 3rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.headerCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  height: 156px;
+  background-image: url('./assets/bg-header-mobile.svg');
+  background-repeat: no-repeat;
+  background-color: hsl(180, 29%, 50%);
+  background-size: cover;
+}
+
+.filter {
+  width: 85%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transform: translateY(-2rem);
+}
+
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tagsWrapper {
+  display: flex;
+}
+
+.jobCardWrapper {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.featuredLine {
+  width: 6px;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 9px 0 0 9px;
+}
+
+.deleteTag {
+  background-color: hsl(180, 29%, 50%);
+  padding: 0 0.8rem;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.filterTag {
+  background-color: hsl(180, 31%, 95%);
+  width: fit-content;
+  padding: 0.6rem;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.clearSection {
+  font-weight: 700;
+  color: hsl(180, 8%, 52%);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px){ 
+  header {
+    background-image: url('./assets//bg-header-desktop.svg');
+  }
+
+  .jobCardWrapper {
+    width: 77%;
+  }
+  
+  .filter {
+    width: 77%;
+  }
+
+  .clearSection:hover {
+    color: hsl(180, 29%, 50%);
+    text-decoration: underline;
+  }
+
+  .deleteTag:hover {
+    background-color: hsl(180, 14%, 20%);
+  }
+}

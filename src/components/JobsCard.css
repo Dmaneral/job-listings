@@ -1,0 +1,139 @@
+.JobsCard {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 9px;
+    position: relative;
+
+    -webkit-box-shadow: 6px 10px 39px -21px rgba(123,142,142,1);
+    -moz-box-shadow: 6px 10px 39px -21px rgba(123,142,142,1);
+    box-shadow: 6px 10px 39px -21px rgba(123,142,142,1);
+}
+
+.jobInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.employeer {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.employeer h1 {
+    font-size: 1rem;
+    color: hsl(180, 29%, 50%);
+    margin-top: 1.5rem;
+    margin-right: 1.3rem;
+}
+
+.badge {
+    background-color: hsl(180, 29%, 50%);
+    padding: 0.45rem 0.7rem;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new {
+    background-color: hsl(180, 29%, 50%);
+}
+
+.featured {
+    background-color: hsl(180, 14%, 20%);
+}
+
+span {
+    transform: translateY(1px);
+}
+
+.jobName {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(180, 14%, 20%);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.jobDetails {
+    font-weight: 500;
+    color: hsl(180, 8%, 52%);
+}
+
+.jobTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.tag {
+    background-color: hsl(180, 31%, 95%);
+    width: fit-content;
+    padding: 0.7rem;
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.avatarImg {
+    width: 64px;
+    position: absolute;
+    top: -32px;
+}
+
+@media screen and (min-width: 1024px){
+    .JobsCard {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .jobInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contentCont {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .employeer h1 {
+        margin: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .jobName:hover {
+        color: hsl(180, 29%, 50%);
+    }
+    
+    .tag:hover {
+        background-color: hsl(180, 29%, 50%);
+        color: hsl(180, 31%, 95%);
+    }
+    
+    .avatarImg {
+        width: 74px;
+        height: 74px;
+        position: static;
+    }
+}
+
